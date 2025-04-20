@@ -13,12 +13,12 @@ namespace MyAspNetApp.Tests
             var controller = new MathController();
 
             // Act
-            var result = controller.Add(2, 3);
+            var result = controller.Add(5, 3);
             var okResult = result.Result as OkObjectResult;
 
             // Assert
             Assert.NotNull(okResult);
-            Assert.Equal(5, okResult.Value);
+            Assert.Equal(8, okResult.Value);
         }
     }
 }
